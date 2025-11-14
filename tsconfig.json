@@ -1,15 +1,33 @@
+// {
+//   "compilerOptions": {
+//     "target": "ES2020",
+//     "module": "nodenext",
+//     "moduleResolution": "nodenext",
+//     "rootDir": "src",
+//     "outDir": "dist",
+//     "esModuleInterop": true,
+//     "strict": true,
+//     "skipLibCheck": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "types": ["node", "jest"]
+//   },
+//   "exclude": ["jest.config.ts", "dist"]
+// }
+
 {
   "compilerOptions": {
     "target": "ES2020",
     "module": "nodenext",
     "moduleResolution": "nodenext",
-    "rootDir": "src",
+
     "outDir": "dist",
     "esModuleInterop": true,
     "strict": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "types": ["node", "jest"]
+    "types": ["node", "jest"],
+    "allowJs": true
   },
-  "exclude": ["jest.config.ts", "dist"]
+  "include": ["src", "tests"],
+  "exclude": ["dist"]
 }
+
